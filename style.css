@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Public+Sans:wght@300;400;700&family=Roboto+Serif:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,500&family=Roboto+Slab:wght@500&family=Roboto:wght@500;700&family=Rubik:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.gameTitle {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.gameTitle h1 {
+  padding-bottom: 5px;
+}
+
+.playing-container {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.gameOverContainer {
+  width: 400px;
+  margin-inline: auto;
+  background-color: rgb(236, 226, 226);
+  padding: 15px 0;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.drawContainer {
+  width: 400px;
+  margin-inline: auto;
+  color: #fff;
+  background-color: rgb(221, 24, 24);
+  padding: 15px 0;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.container {
+  width: 500px;
+  height: auto;
+  background-color: #f4f4f4;
+  margin-inline: auto;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  grid-gap: 10px;
+}
+
+.tile {
+  padding: 50px;
+  border: 3px #222 solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.tile.matchTile {
+  color: #fff;
+  background-color: rgb(30, 103, 30);
+}
+
+.tile.draw {
+  color: #fff;
+  background-color: rgb(221, 24, 24);
+}
+
+.hidden {
+  display: none;
+}
+
+.reset-container {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.resetBtn {
+  cursor: pointer;
+  padding: 10px 13px;
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    width: 95%;
+  }
+}
